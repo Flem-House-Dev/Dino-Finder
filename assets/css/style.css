@@ -1,0 +1,41 @@
+:root {
+    --test-outline: 2px solid blue;
+}
+
+header {
+    width: 100%;
+    outline: var(--test-outline);
+    display: flex;
+    justify-content: center;
+
+}
+
+main {
+    display: flex;
+}
+
+main section{
+    width: 50%;
+    outline: var(--test-outline);
+    height: 500px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+#img-section {
+    padding: 10px;
+}
+
+#img-section img {
+    width: 100%;
+}
+
+#form-section {
+    display: flex;
+    justify-content: center;
+}
+
+form > input, textarea{
+    width: 100%;
+    margin-bottom: 10px;
+}
