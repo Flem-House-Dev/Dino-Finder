@@ -19,4 +19,5 @@ const  saveFormData =  function() {
 submitEl.addEventListener('click', function(event) {
     event.preventDefault(event);
     saveFormData();
+    window.location.href = "blog.html";
 })
