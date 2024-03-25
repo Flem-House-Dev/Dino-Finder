@@ -1,19 +1,17 @@
 const submitEl = document.getElementById("submitBtn");
-
+const formUserName = document.getElementById('userName');
+const formTitle = document.getElementById('title');
+const formContent = document.getElementById('content');
 
 const  saveFormData =  function() {
-    const formEl = document.getElementById("formDinoData");
-    const formData = new FormData(formEl);
 
-    let formObject = {};
+    const dinoForm = {
+        userName: formUserName.value,
+        title: formTitle.value,
+        content: formContent.value
+    };
 
-    formData.forEach(function(value,key){
-        formObject[key] = value;
-    })
-
-    console.log(formObject);
-    
-    localStorage.setItem('dinoForm', JSON.stringify(formObject));
+    localStorage.setItem('dinoForm', JSON.stringify(dinoForm));
 }
 
 submitEl.addEventListener('click', function(event) {

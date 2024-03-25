@@ -7,4 +7,4 @@ const blogBody = document.getElementById('blog-body');
 
 blogTitle.textContent = blogData.title;
 blogAuthor.textContent = `Written by: ${blogData.userName}`;
-blogBody.textContent = blogData.Content;
+blogBody.textContent = blogData.content;
