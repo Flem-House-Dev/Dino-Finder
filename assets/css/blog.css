@@ -1,3 +1,9 @@
+#back-link {
+    /* outline: var(--test-outline); */
+    position: absolute;
+    left: 10px;
+}
+
 #blog-section {
     display: flex;
     flex-direction: column;
