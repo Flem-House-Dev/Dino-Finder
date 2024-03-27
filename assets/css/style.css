@@ -23,6 +23,10 @@
 #container {
     display: block;
     height: 100vh;
+
+    transition-property: background-color, color, border, background-image;
+    transition-duration: .35s;
+    transition-timing-function: ease-in;
 }
 
 body {
@@ -92,6 +96,7 @@ footer {
 .light {
     background-color: var(--light-bg-color);
     color: var(--light-text-color);
+    font-weight: bold;
 }
 
 .light header {
