@@ -1,3 +1,18 @@
+:root {
+
+    /* --light mode vars-- */
+    --light-form-input-bg: ;
+    --light-input-border-color: ;
+    --light-submitBtn-color: ;
+    /* --dark mode vars-- */
+    --dark-form-input-bg: ;
+    --dark-input-border-color: ;
+    --dark-submitBtn-color: ;
+}
+
+input, textarea {
+    background-color: #fcfc9a;
+}
 
 #form-section {
     display: flex;
@@ -7,4 +22,9 @@
 form > input, textarea{
     width: 100%;
     margin-bottom: 10px;
+    border-color: green;
+}
+
+input[type="submit"] {
+    background-color: #93ff93;
 }
