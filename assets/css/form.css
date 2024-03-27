@@ -28,3 +28,17 @@ form > input, textarea{
 input[type="submit"] {
     background-color: #93ff93;
 }
+
+/* ---Light Mode--- */
+
+.light input, textarea {
+    background-color: #fcfc9a;
+    border-color: green;
+}
+
+.light input[type="submit"] {
+    background-color: #93ff93;
+}
+
+.light 
+/* ---Dark Mode---  */
