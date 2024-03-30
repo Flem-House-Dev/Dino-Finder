@@ -24,6 +24,15 @@ function saveFormData() {
 
 submitEl.addEventListener('click', function (event) {
     event.preventDefault(event);
+
+    const requiredFields = [formUserName, formTitle, formContent];
+    for (const field of requiredFields) {
+        if (field.value.trim() === "") {
+            alert("Please fill in all fields before submitting.");
+            return; 
+        }
+    }
+
     saveFormData();
     window.location.href = "blog.html";
 })
