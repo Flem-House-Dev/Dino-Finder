@@ -69,18 +69,7 @@ main {
 
 main section{
     box-sizing: border-box;
-    /* flex: 1 1; */
 }
-
-#img-section {
-    flex: 1 1;
-}
-
-#form-section {
-    flex: 1 1;
-}
-
-
 
 footer {
     width: 100%;
@@ -102,7 +91,18 @@ footer {
 
 #img-section {
     padding: 10px;
+    flex: 1 1;
 }
+
+#form-section {
+    flex: 1 1;
+}
+
+#back-link {
+    margin-left: 15px;
+    position: absolute;
+    left: 0px
+ }
 
 #img-section img {
     width: 100%;
@@ -241,3 +241,13 @@ footer {
     }
 }
 
+@media (max-width: 458px) {
+    #back-link {
+        margin-left: 15px;
+        position: static;
+     }
+
+     #light-dark-mode-switch {
+        position: static;
+    }
+}
