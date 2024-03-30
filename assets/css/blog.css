@@ -13,6 +13,7 @@
     flex: 1;
     padding: 15px;
     height: auto;
+    width: 100%;
 }
 
 #blog-section h4, h5, h6 {
