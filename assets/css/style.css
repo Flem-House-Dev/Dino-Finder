@@ -116,6 +116,14 @@ footer {
     border-radius: 5px;
 }
 
+footer {
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+}
+
 /* --- Theme Switching Selectors ------------------------------------ */
 
 /* ---Light Mode--- */
@@ -148,6 +156,14 @@ footer {
     border-radius: 10px;
     padding: 0 10px;
     color: var(--light-bg-color);
+}
+
+.light footer a {
+    color: var(--light-text-color);
+}
+
+.light footer a:visited {
+    color: var(--light-text-color);
 }
 
 .light #light-dark-mode-switch:hover {
@@ -192,6 +208,14 @@ footer {
 .dark header #back-link:hover {
     box-shadow: 0 0 20px 5px var(--dark-text-color);
     color: #ffd779;
+}
+
+.dark footer a {
+    color: var(--dark-text-color);
+}
+
+.dark footer a:visited {
+    color: var(--dark-text-color);
 }
 
 .dark #light-dark-mode-switch:hover {
