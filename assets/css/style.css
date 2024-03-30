@@ -23,14 +23,6 @@
     /* outline: var(--test-outline); */
 }
 
-#container {
-    display: flex;
-    flex-direction: column;
-    transition-property: background-color, color, border, background-image;
-    transition-duration: .35s;
-    transition-timing-function: ease-in;
-}
-
 body {
     font-family: Papyrus, 'Arial Narrow Bold', sans-serif;
     font-size: 20px;
@@ -39,6 +31,16 @@ body {
     position: relative;
     background-color: var(--light-bg-color);
 }
+
+#container {
+    display: flex;
+    flex-direction: column;
+    transition-property: background-color, color, border, background-image;
+    transition-duration: .35s;
+    transition-timing-function: ease-in;
+}
+
+/* --- Element Selectors ----------------------------------------- */
 
 header {
     position: relative;
@@ -50,26 +52,14 @@ header {
     border-bottom: 2px solid green;
 }
 
-header a:link, a:visited {
-    transition: .35s;
-    transition-timing-function: ease-out;
-}
-
 header h1 {
     flex: 1 1 500px;
     margin: 15px;
 }
 
-#light-dark-mode-switch {
-    position: absolute;
-    right: 20px;
-    border-radius: 100%;
-    transition: .35s ease-out;
-}
-
-#light-dark-mode-switch:hover {
-    cursor: pointer;
-   
+header a:link, a:visited {
+    transition: .35s;
+    transition-timing-function: ease-out;
 }
 
 main {
@@ -80,6 +70,24 @@ main {
 main section{
     box-sizing: border-box;
     flex: 1 1;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+}
+
+/* --- Component Seclectors --------------------------------- */
+
+#light-dark-mode-switch {
+    position: absolute;
+    right: 20px;
+    border-radius: 100%;
+    transition: .35s ease-out;
+}
+
+#light-dark-mode-switch:hover {
+    cursor: pointer;
 }
 
 #img-section {
@@ -93,10 +101,7 @@ main section{
     border-radius: 5px;
 }
 
-footer {
-    width: 100%;
-    height: 100px;
-}
+/* --- Theme Switching Selectors ------------------------------------ */
 
 /* ---Light Mode--- */
 .light {
@@ -133,6 +138,7 @@ footer {
 .light #light-dark-mode-switch:hover {
     box-shadow:inset 0 0 16px  orange, 0 0 28px 5px orange;
 }
+
 /* ---Dark Mode---  */
 
 .dark {
@@ -172,3 +178,7 @@ footer {
 .dark #light-dark-mode-switch:hover {
     box-shadow:inset 0 0 16px  var(--dark-text-color), 0 0 28px 5px var(--dark-text-color);
 }
+
+/* ---Responsive Layout------------------------------------------- */
+
+@media (max-width: )

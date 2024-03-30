@@ -5,6 +5,8 @@
     --dark-dino-div-border: 2px solid #fec2356c;
  } 
 
+/* --- Component Selectors -------------------------------------------------- */
+
 #back-link {
    margin-left: 15px;
 }
@@ -29,6 +31,7 @@
     text-decoration: underline;
 }
 
+/* --- Theme Switching Selectors ------------------------------------ */
 
 .light .dino-div {
     border: var(--light-dino-div-border);

@@ -13,6 +13,7 @@
     --dark-dinoDiv-border: 2px solid
 }
 
+/* --- Component Selectors ------------------------------------------------- */
 textarea, input {
     font-family: Papyrus, 'Arial Narrow Bold', sans-serif;
     border-radius: 5px;
@@ -32,6 +33,8 @@ form > input, textarea{
 #submitBtn:hover {
     cursor: pointer;
 }
+
+/* --- Theme Switching Selectors ------------------------------------ */
 
 /* ---Light Mode--- */
 
