@@ -29,6 +29,10 @@ form > input, textarea{
     margin-bottom: 10px;
 }
 
+#submitBtn:hover {
+    cursor: pointer;
+}
+
 /* ---Light Mode--- */
 
 .light input {
@@ -55,6 +59,10 @@ form > input, textarea{
 
 .light input[type="submit"] {
     background-color: var(--light-submitBtn-color);
+}
+
+.light input[type="submit"]:hover {
+    box-shadow: 0 0 15px  green;
 }
 
 /* ---Dark Mode--- */
@@ -84,4 +92,8 @@ form > input, textarea{
 .dark input[type="submit"] {
     background-color: var(--dark-form-input-bg);
     color: var(--dark-text-color);
+}
+
+.dark input[type="submit"]:hover {
+    box-shadow: 0 0 15px 3px var(--dark-input-border-color);
 }
