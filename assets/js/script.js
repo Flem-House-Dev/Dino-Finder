@@ -1,4 +1,3 @@
-
 const themeSwitcher = document.querySelector('#light-dark-mode-switch');
 const container = document.querySelector('.container');
 

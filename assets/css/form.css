@@ -1,17 +1,22 @@
 :root {
 
     /* --light mode vars-- */
-    --light-form-input-bg: ;
-    --light-input-border-color: ;
-    --light-submitBtn-color: ;
+    --light-text-color: black;
+    --light-form-input-bg: #fcfc9a;
+    --light-input-border-color: green;
+    --light-submitBtn-color: #93ff93;
     /* --dark mode vars-- */
-    --dark-form-input-bg: ;
-    --dark-input-border-color: ;
-    --dark-submitBtn-color: ;
+    --dark-text-color: #FEC135;
+    --dark-form-input-bg: #A53005;
+    --dark-input-border-color: #fec2356c;
+    --dark-submitBtn-color: #6F0100;
+    --dark-dinoDiv-border: 2px solid
 }
 
-input, textarea {
-    background-color: #fcfc9a;
+textarea, input {
+    font-family: Papyrus, 'Arial Narrow Bold', sans-serif;
+    border-radius: 5px;
+    transition: .25s ease-out;
 }
 
 #form-section {
@@ -22,23 +27,61 @@ input, textarea {
 form > input, textarea{
     width: 100%;
     margin-bottom: 10px;
-    border-color: green;
-}
-
-input[type="submit"] {
-    background-color: #93ff93;
 }
 
 /* ---Light Mode--- */
 
-.light input, textarea {
-    background-color: #fcfc9a;
-    border-color: green;
+.light input {
+    background-color: var(--light-form-input-bg);
+    border-color: var(--light-input-border-color);
+    color: var(--light-text-color);
+}
+
+.light input:focus {
+    box-shadow: 0 0 15px  green;
+    outline: none;
+}
+
+.light textarea:focus {
+    box-shadow: 0 0 15px  green;
+    outline: none;
+}
+
+.light textarea {
+    background-color: var(--light-form-input-bg);
+    border-color: var(--light-input-border-color);
+    color: var(--light-text-color);
 }
 
 .light input[type="submit"] {
-    background-color: #93ff93;
+    background-color: var(--light-submitBtn-color);
 }
 
-.light 
-/* ---Dark Mode---  */
+/* ---Dark Mode--- */
+
+.dark input {
+    background-color: var(--dark-form-input-bg);
+    border-color: var(--dark-input-border-color);
+    color: var(--dark-text-color);
+}
+
+.dark input:focus {
+    box-shadow: 0 0 15px 3px var(--dark-input-border-color);
+    outline: none;
+}
+
+.dark textarea:focus {
+    box-shadow: 0 0 15px 3px var(--dark-input-border-color);
+    outline: none;
+}
+
+.dark textarea {
+    background-color: var(--dark-form-input-bg);
+    border-color: var(--dark-input-border-color);
+    color: var(--dark-text-color);
+}
+
+.dark input[type="submit"] {
+    background-color: var(--dark-form-input-bg);
+    color: var(--dark-text-color);
+}
