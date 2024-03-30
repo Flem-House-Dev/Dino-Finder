@@ -25,9 +25,14 @@ textarea, input {
     justify-content: center;
 }
 
-form > input, textarea{
-    width: 100%;
+form > input, textarea, input[type="submit"]{
+    width: 98%;
+    /* margin: 0 10px; */
     margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    width: 100%;
 }
 
 #submitBtn:hover {
@@ -64,9 +69,7 @@ form > input, textarea{
     background-color: var(--light-submitBtn-color);
 }
 
-.light input[type="submit"]:hover {
-    box-shadow: 0 0 15px  green;
-}
+
 
 /* ---Dark Mode--- */
 
@@ -97,6 +100,3 @@ form > input, textarea{
     color: var(--dark-text-color);
 }
 
-.dark input[type="submit"]:hover {
-    box-shadow: 0 0 15px 3px var(--dark-input-border-color);
-}
