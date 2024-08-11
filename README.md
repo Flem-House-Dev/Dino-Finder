@@ -6,7 +6,7 @@ This blogging website allows you to log information about your favorite dinos.
 
 ## Installation
 
-Use this link that takes you to [DINOfinder](https://jfleming963.github.io/Dino-Finder/).
+Use this link that takes you to [DINOfinder](https://flem-house-dev.github.io/Dino-Finder/).
 
 ## Usage
 
